@@ -1,9 +1,8 @@
 package com.vasu.blog.springbootBlogApplication.service;
-
 import com.vasu.blog.springbootBlogApplication.dtos.PostDto;
 import com.vasu.blog.springbootBlogApplication.dtos.PostResponse;
 
-import java.util.List;
+
 
 public interface PostService {
     PostDto createPost(PostDto postDto);

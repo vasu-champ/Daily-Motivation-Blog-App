@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication.controller;
-
 import com.vasu.blog.springbootBlogApplication.dtos.JWTAuthResponse;
 import com.vasu.blog.springbootBlogApplication.dtos.LoginDto;
 import com.vasu.blog.springbootBlogApplication.dtos.SignUpDto;
@@ -8,6 +7,8 @@ import com.vasu.blog.springbootBlogApplication.entity.User;
 import com.vasu.blog.springbootBlogApplication.repository.RoleRepository;
 import com.vasu.blog.springbootBlogApplication.repository.UserRepository;
 import com.vasu.blog.springbootBlogApplication.security.JwtTokenProvider;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,9 +21,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.Collections;
 
+@Api(value = "Auth controller exposes signin and signup REST APIs")
 @RestController
 @RequestMapping("/api/v1/auth")
 public class AuthController {
@@ -37,6 +38,7 @@ public class AuthController {
     @Autowired
     private JwtTokenProvider tokenProvider;
 
+    @ApiOperation(value = "REST API to Register or Signup user to Blog App")
     @PostMapping("/signin")
     public ResponseEntity<JWTAuthResponse> authenticatedUser(@RequestBody LoginDto loginDto) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
@@ -48,6 +50,7 @@ public class AuthController {
 
         return  ResponseEntity.ok(new JWTAuthResponse(token));
     }
+    @ApiOperation(value = "REST API to Signin or Login user to Blog App")
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@RequestBody SignUpDto signUpDto){
         //add check for username exists in database or not

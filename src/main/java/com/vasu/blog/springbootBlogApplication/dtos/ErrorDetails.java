@@ -1,6 +1,7 @@
 package com.vasu.blog.springbootBlogApplication.dtos;
 import java.util.Date;
 
+
 public class ErrorDetails {
     private Date timestamp;
     private String message;

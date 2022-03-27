@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication.repository;
-
 import com.vasu.blog.springbootBlogApplication.entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 

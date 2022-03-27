@@ -1,7 +1,5 @@
 package com.vasu.blog.springbootBlogApplication.service;
-
 import com.vasu.blog.springbootBlogApplication.dtos.CommentDto;
-
 import java.util.List;
 
 public interface CommentService {

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vasu.blog</groupId>
-	<artifactId>springboot-Blog-Application</artifactId>
+	<artifactId>DailyMotivation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-Blog-Application</name>
+	<name>DailyMotivation</name>
 	<description>springboot blog application</description>
 	<properties>
 <!--		<java.version>11</java.version>-->

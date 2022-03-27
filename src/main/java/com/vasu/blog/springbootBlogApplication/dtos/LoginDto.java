@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication.dtos;
-
 import lombok.Data;
 
 @Data

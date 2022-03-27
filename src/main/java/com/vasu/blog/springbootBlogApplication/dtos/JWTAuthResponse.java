@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication.dtos;
-
 public class JWTAuthResponse {
     private String accessToken;
     private String tokenType = "Bearer";

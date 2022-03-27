@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication.service.impl;
-
 import com.vasu.blog.springbootBlogApplication.dtos.CommentDto;
 import com.vasu.blog.springbootBlogApplication.entity.Comment;
 import com.vasu.blog.springbootBlogApplication.entity.Post;
@@ -11,7 +10,6 @@ import com.vasu.blog.springbootBlogApplication.service.CommentService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 

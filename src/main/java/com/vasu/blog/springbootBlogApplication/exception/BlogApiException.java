@@ -1,6 +1,5 @@
 package com.vasu.blog.springbootBlogApplication.exception;
 import org.springframework.http.HttpStatus;
-
 public class BlogApiException extends RuntimeException{
     private HttpStatus status;
     private String message;

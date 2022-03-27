@@ -1,5 +1,4 @@
 package com.vasu.blog.springbootBlogApplication;
-
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
